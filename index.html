@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Heni Prajapati</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Heni Prajapati</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Heni Prajapati profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Heni Prajapati</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <!-- <h4> And I love Cats</h4> -->
+        <div class="btn-container" style="font-weight: 500;">
+        </div>
+        <!-- <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/heni-prajapati/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/heni-29'"
+          />
+        </div> -->
+      </div>
+    </section>
+    <section id="about" style="display: block; margin-top: 20px">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+        <div class="about-details-container" style="align-items: center;">
+          <div >
+            <p style="text-align: justify; width:900px; align-content: center; margin-top:10px">
+              Hi, I am a passionate software engineer and current Master’s student in Computer Science. I enjoy designing and building full-stack applications that combine technical strength with great user experience. My background spans front-end and back-end development, cloud systems, databases, and machine learning, and I’ve delivered projects from concept to launch in both academic and professional settings. I’m driven by curiosity, collaboration, and the challenge of turning real-world problems into elegant, scalable solutions.
+            </p>
+          </div>
+          
+            <div class="details-container" style="align-content: center; margin-top: 60px; width: 600px">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 year <br />IT Trainee @ FIS Global</p>
+
+            </div>
+            <div class="details-container" style="margin-top: 10px; width: 600px">
+              <img 
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>MSCS @ University of Illinois at Chicago (Aug 2024 - Present)
+                <br />B.Tech CSE @ IIIT Dharwad (Aug 2019 - May 2023)</p>
+            </div>
+          
+        </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore</p>
+      <h1 class="title" style="margin-bottom: 20px;">My Skills</h1>
+      <div class="experience-details-container">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/java.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/typescript.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sql.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/react.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+            </div>
+            <div class="article-container" style="margin-top: 30px;">
+              <article>
+                <img
+                  src="./assets/angular.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/nodejs.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/api.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RESTful APIs</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/springboot.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring Boot</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/flask.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/django.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysql.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+            </div>
+            <div class="article-container" style="margin-top: 30px;">
+              <article>
+                <img
+                  src="./assets/postgresql.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongodb.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sqlite.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQLite</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/amazon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/docker.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                </div>
+              </article>
+            </div>
+            <div class="article-container" style="margin-top: 30px;">
+              <article>
+                <img
+                  src="./assets/pytorch.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/tf.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/padas.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/numpy.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NumPy</h3>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+
+        
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container" style="padding: 20px 40px; text-align: justify;">
+              <h2 class="experience-sub-title project-title" style="color: purple;">Camp+</h2>
+              <ul style="padding-left: 20px; list-style-type: disc;">
+                <li style="margin-bottom: 8px;">Built a full-stack MERN web app to streamline campus services for 900+ students, cutting request resolution time by 40%.</li>
+                <li style="margin-bottom: 8px;">Provided access to event registration, library bookings, room management, and deliveries.</li>
+                <li style="margin-bottom: 8px;">Developed RESTful APIs with Express.js/Node.js and used MongoDB for efficient data handling.</li>
+                <li style="margin-bottom: 8px;">Created a responsive React.js front end, improving usability and student satisfaction.</li>
+                <li style="margin-bottom: 8px;">Secured a $3000 grant through project proposals, boosting campus accessibility for 50%+ of students.</li>
+              </ul>
+            </div>
+          <div class="details-container color-container" style="padding: 20px 40px; text-align: justify;">
+              <h2 class="experience-sub-title project-title" style="color: purple;">RhythPic</h2>
+              <ul style="padding-left: 20px; list-style-type: disc;">
+                <li style="margin-bottom: 8px;">Built a web platform for collaborative playlists, time-travel music discovery, and immersive song exploration using TypeScript, Firebase, and MongoDB.</li>
+                <li style="margin-bottom: 8px;">Implemented Smart Search and Queue Management systems, cutting search and playlist handling time by 30%+.</li>
+                <li style="margin-bottom: 8px;">Boosted engagement by creating an AI module generating 500+ lyric-based visuals and song insights, reducing bounce rate by 15% in the first month.</li>
+                <li style="margin-bottom: 8px;">Created a responsive React.js front end, improving usability and student satisfaction.</li>
+                <li style="margin-bottom: 8px;">Integrated Spotify API, Genius API, and an image generation service for dynamic content delivery..</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">heni290102@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/heni-prajapati">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
