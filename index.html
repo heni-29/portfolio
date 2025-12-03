@@ -1,450 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Heni Prajapati</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heni Prajapati | Full Stack Developer Portfolio</title>
+  <meta name="description"
+    content="Full Stack Developer specializing in MERN stack, cloud systems, and machine learning. Master's student in Computer Science at UIC with 1 year experience at FIS Global." />
+  <meta name="keywords"
+    content="Full Stack Developer, MERN Stack, React, Node.js, Python, Java, AWS, Machine Learning, Software Engineer, UIC, Computer Science" />
+  <meta name="author" content="Heni Prajapati" />
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Heni Prajapati | Full Stack Developer Portfolio" />
+  <meta property="og:description"
+    content="Full Stack Developer specializing in MERN stack, cloud systems, and machine learning." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://heni-prajapati.com" />
+  <meta property="og:image" content="./assets/profile-pic.png" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Heni Prajapati | Full Stack Developer" />
+  <meta name="twitter:description"
+    content="Full Stack Developer specializing in MERN stack, cloud systems, and machine learning." />
+  <meta name="twitter:image" content="./assets/profile-pic.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/profile-pic.png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Heni Prajapati</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work-experience">Experience</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Heni Prajapati</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#work-experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Heni Prajapati profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Heni Prajapati</h1>
+      <p class="section__text__p2">Full Stack Developer</p>
+      <p class="professional-summary">Master's student in Computer Science at UIC with expertise in building scalable
+        full-stack applications. Passionate about creating elegant solutions to complex problems using modern
+        technologies.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('./assets/Heniben_Prajapati.pdf')">
+          Download Resume
+        </button>
+        <button class="btn btn-color-2" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/heni-prajapati'" title="LinkedIn Profile" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/heni-29'" title="GitHub Profile" />
+      </div>
+    </div>
+  </section>
+  <section id="about" style="display: block; margin-top: 20px">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="about-details-container" style="align-items: center;">
       <div>
+        <p style="text-align: justify; max-width:900px; align-content: center; margin-top:10px">
+          Hi, I am a passionate software engineer and current Master's student in Computer Science at the University of
+          Illinois at Chicago. I enjoy designing
+          and building full-stack applications that combine technical strength with great user experience. My background
+          spans front-end and back-end development, cloud systems, databases, and machine learning, and I've delivered
+          projects from concept to launch in both academic and professional settings. I'm driven by curiosity,
+          collaboration, and the challenge of turning real-world problems into elegant, scalable solutions.
+        </p>
+        <p style="text-align: justify; max-width:900px; margin-top:15px; color: var(--text-light);">
+          📍 <strong>Location:</strong> Chicago, IL, USA | <strong>Status:</strong> Open to Full-Time Opportunities (May
+          2026)
+        </p>
+      </div>
+
+      <div class="about-cards-container">
+        <div class="details-container" style="align-content: center; width: 600px">
+          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>1+ year <br />Software Development</p>
+        </div>
+        <div class="details-container" style="align-content: center; width: 600px">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>MSCS @ University of Illinois at Chicago (Aug 2024 - May 2026)
+            <br />B.Tech CSE @ IIIT Dharwad (Aug 2019 - May 2023)
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WORK EXPERIENCE SECTION -->
+  <section id="work-experience">
+    <p class="section__text__p1">My Professional Journey</p>
+    <h1 class="title">Work Experience</h1>
+    <div class="experience-details-container">
+      <div class="details-container work-experience-card">
+        <div class="work-header">
+          <div>
+            <h2 class="experience-sub-title" style="color: var(--text-primary); margin-bottom: 0.5rem;">IT Trainee</h2>
+            <h3 style="color: #667eea; font-size: 1.3rem; margin-bottom: 0.5rem;">FIS Global</h3>
+          </div>
+          <p class="work-date">June 2023 - May 2024</p>
+        </div>
+        <ul class="work-responsibilities">
+          <li>Developed and maintained full-stack applications using Java Spring Boot and Angular, improving system
+            performance by 25%</li>
+          <li>Collaborated with cross-functional teams to design and implement RESTful APIs serving 10,000+ daily
+            requests</li>
+          <li>Optimized database queries in MySQL, reducing query execution time by 40%</li>
+          <li>Implemented automated testing using JUnit and Mockito, increasing code coverage from 60% to 85%</li>
+          <li>Participated in Agile development cycles, contributing to sprint planning and code reviews</li>
+          <li>Worked with Docker for containerization and deployment of microservices</li>
+        </ul>
+        <div class="tech-stack-used">
+          <span class="tech-badge">Java</span>
+          <span class="tech-badge">Spring Boot</span>
+          <span class="tech-badge">Angular</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">Docker</span>
+          <span class="tech-badge">REST APIs</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore</p>
+    <h1 class="title" style="margin-bottom: 20px;">My Skills</h1>
+    <div class="experience-details-container">
+      <div class="details-container">
+        <div class="article-container">
+          <article>
+            <img src="./assets/java.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Java</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/javascript.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>JavaScript</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/python.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Python</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/typescript.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>TypeScript</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/sql.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>SQL</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/html.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>HTML</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/react.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>React</h3>
+            </div>
+          </article>
+        </div>
+        <div class="article-container" style="margin-top: 30px;">
+          <article>
+            <img src="./assets/angular.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Angular</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/nodejs.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Node.js</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/api.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>RESTful APIs</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/springboot.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Spring Boot</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/flask.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Flask</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/django.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Django</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/mysql.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>MySQL</h3>
+            </div>
+          </article>
+        </div>
+        <div class="article-container" style="margin-top: 30px;">
+          <article>
+            <img src="./assets/postgresql.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>PostgreSQL</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/mongodb.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>MongoDB</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/sqlite.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>SQLite</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/amazon.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>AWS</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/docker.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Docker</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/git.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Git</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/github.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Github</h3>
+            </div>
+          </article>
+        </div>
+        <div class="article-container" style="margin-top: 30px;">
+          <article>
+            <img src="./assets/pytorch.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>PyTorch</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/tf.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>TensorFlow</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/padas.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Pandas</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/numpy.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>NumPy</h3>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <!-- Project 1: Camp+ -->
+        <div class="details-container color-container project-card">
+          <div class="project-header">
+            <h2 class="experience-sub-title project-title">Camp+</h2>
+            <p class="project-date">Jan 2023 - May 2023</p>
+          </div>
+          <p class="project-description">
+            A comprehensive full-stack MERN web application designed to streamline campus services for 900+ students,
+            reducing request resolution time by 40% and improving overall campus accessibility.
+          </p>
+          <ul class="project-highlights">
+            <li>Built event registration, library bookings, room management, and delivery tracking systems</li>
+            <li>Developed RESTful APIs with Express.js/Node.js serving 5,000+ daily requests</li>
+            <li>Implemented MongoDB with optimized schemas for efficient data handling</li>
+            <li>Created responsive React.js front end with Redux state management</li>
+            <li>Secured $3,000 grant through comprehensive project proposals</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Redux</span>
+            <span class="tech-badge">REST API</span>
+          </div>
+        </div>
+
+        <!-- Project 2: RhythPic -->
+        <div class="details-container color-container project-card">
+          <div class="project-header">
+            <h2 class="experience-sub-title project-title">RhythPic</h2>
+            <p class="project-date">Aug 2022 - Dec 2022</p>
+          </div>
+          <p class="project-description">
+            An innovative music discovery platform featuring collaborative playlists, time-travel music exploration,
+            and AI-powered lyric visualization, reducing bounce rate by 15% in the first month.
+          </p>
+          <ul class="project-highlights">
+            <li>Developed collaborative playlist system with real-time synchronization using Firebase</li>
+            <li>Implemented Smart Search with 30%+ improvement in search and playlist handling time</li>
+            <li>Created AI module generating 500+ lyric-based visuals using image generation APIs</li>
+            <li>Integrated Spotify API and Genius API for comprehensive music data</li>
+            <li>Built responsive TypeScript-based front end with modern UI/UX principles</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Spotify API</span>
+            <span class="tech-badge">AI/ML</span>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+  <section id="certifications">
+    <p class="section__text__p1">My Achievements</p>
+    <h1 class="title">Certifications & Awards</h1>
+    <div class="experience-details-container">
+      <div class="certifications-grid">
+        <div class="details-container certification-card">
+          <div class="cert-icon">🏆</div>
+          <h3>$3,000 Grant Award</h3>
+          <p class="cert-issuer">IIIT Dharwad</p>
+          <p class="cert-description">Secured funding for Camp+ project through competitive proposal process</p>
+          <p class="cert-date">2023</p>
+        </div>
+
+        <div class="details-container certification-card">
+          <div class="cert-icon">🎓</div>
+          <h3>Master's in Computer Science</h3>
+          <p class="cert-issuer">University of Illinois at Chicago</p>
+          <p class="cert-description">Pursuing advanced studies in Software Engineering and Machine Learning</p>
+          <p class="cert-date">2024 - 2026</p>
+        </div>
+
+        <div class="details-container certification-card">
+          <div class="cert-icon">💻</div>
+          <h3>Full Stack Development</h3>
+          <p class="cert-issuer">FIS Global</p>
+          <p class="cert-description">Professional experience in enterprise-level application development</p>
+          <p class="cert-date">2023 - 2024</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+
+
+
+    <!-- Contact Form -->
+    <div class="contact-form-container">
+      <h2 class="form-title">Send Me a Message</h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" name="subject" placeholder="Subject" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-color-1 submit-btn">Send Message</button>
+      </form>
+      <p class="email-text">Or email me directly at: <a href="mailto:heni290102@gmail.com">heni290102@gmail.com</a></p>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#work-experience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Heni Prajapati</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Heni Prajapati profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Heni Prajapati</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <!-- <h4> And I love Cats</h4> -->
-        <div class="btn-container" style="font-weight: 500;">
-        </div>
-        <!-- <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/heni-prajapati/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/heni-29'"
-          />
-        </div> -->
-      </div>
-    </section>
-    <section id="about" style="display: block; margin-top: 20px">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-        <div class="about-details-container" style="align-items: center;">
-          <div >
-            <p style="text-align: justify; width:900px; align-content: center; margin-top:10px">
-              Hi, I am a passionate software engineer and current Master’s student in Computer Science. I enjoy designing and building full-stack applications that combine technical strength with great user experience. My background spans front-end and back-end development, cloud systems, databases, and machine learning, and I’ve delivered projects from concept to launch in both academic and professional settings. I’m driven by curiosity, collaboration, and the challenge of turning real-world problems into elegant, scalable solutions.
-            </p>
-          </div>
-          
-            <div class="details-container" style="align-content: center; margin-top: 60px; width: 600px">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1 year <br />IT Trainee @ FIS Global</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-            </div>
-            <div class="details-container" style="margin-top: 10px; width: 600px">
-              <img 
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>MSCS @ University of Illinois at Chicago (Aug 2024 - Present)
-                <br />B.Tech CSE @ IIIT Dharwad (Aug 2019 - May 2023)</p>
-            </div>
-          
-        </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore</p>
-      <h1 class="title" style="margin-bottom: 20px;">My Skills</h1>
-      <div class="experience-details-container">
-          <div class="details-container">
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/java.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/javascript.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/python.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/typescript.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/sql.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/html.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/react.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                </div>
-              </article>
-            </div>
-            <div class="article-container" style="margin-top: 30px;">
-              <article>
-                <img
-                  src="./assets/angular.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Angular</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/nodejs.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node.js</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/api.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>RESTful APIs</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/springboot.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Spring Boot</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/flask.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flask</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/django.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/mysql.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                </div>
-              </article>
-            </div>
-            <div class="article-container" style="margin-top: 30px;">
-              <article>
-                <img
-                  src="./assets/postgresql.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/mongodb.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/sqlite.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQLite</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/amazon.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AWS</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/docker.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/git.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/github.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                </div>
-              </article>
-            </div>
-            <div class="article-container" style="margin-top: 30px;">
-              <article>
-                <img
-                  src="./assets/pytorch.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PyTorch</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/tf.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TensorFlow</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/padas.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Pandas</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/numpy.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NumPy</h3>
-                </div>
-              </article>
-              
-            </div>
-          </div>
-
-        
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1"></p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container" style="padding: 20px 40px; text-align: justify;">
-              <h2 class="experience-sub-title project-title" style="color: purple;">Camp+</h2>
-              <ul style="padding-left: 20px; list-style-type: disc;">
-                <li style="margin-bottom: 8px;">Built a full-stack MERN web app to streamline campus services for 900+ students, cutting request resolution time by 40%.</li>
-                <li style="margin-bottom: 8px;">Provided access to event registration, library bookings, room management, and deliveries.</li>
-                <li style="margin-bottom: 8px;">Developed RESTful APIs with Express.js/Node.js and used MongoDB for efficient data handling.</li>
-                <li style="margin-bottom: 8px;">Created a responsive React.js front end, improving usability and student satisfaction.</li>
-                <li style="margin-bottom: 8px;">Secured a $3000 grant through project proposals, boosting campus accessibility for 50%+ of students.</li>
-              </ul>
-            </div>
-          <div class="details-container color-container" style="padding: 20px 40px; text-align: justify;">
-              <h2 class="experience-sub-title project-title" style="color: purple;">RhythPic</h2>
-              <ul style="padding-left: 20px; list-style-type: disc;">
-                <li style="margin-bottom: 8px;">Built a web platform for collaborative playlists, time-travel music discovery, and immersive song exploration using TypeScript, Firebase, and MongoDB.</li>
-                <li style="margin-bottom: 8px;">Implemented Smart Search and Queue Management systems, cutting search and playlist handling time by 30%+.</li>
-                <li style="margin-bottom: 8px;">Boosted engagement by creating an AI module generating 500+ lyric-based visuals and song insights, reducing bounce rate by 15% in the first month.</li>
-                <li style="margin-bottom: 8px;">Created a responsive React.js front end, improving usability and student satisfaction.</li>
-                <li style="margin-bottom: 8px;">Integrated Spotify API, Genius API, and an image generation service for dynamic content delivery..</li>
-              </ul>
-            </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">heni290102@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/heni-prajapati">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>
