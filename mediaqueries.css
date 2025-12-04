@@ -5,7 +5,7 @@
   }
 
   .about-containers {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #contact,
@@ -62,6 +62,7 @@
 
   .about-containers {
     margin-top: 0;
+    grid-template-columns: 1fr;
   }
 
   .professional-summary {
@@ -104,7 +105,10 @@
     margin-bottom: 2rem;
   }
 
-  .about-containers,
+  .about-containers {
+    grid-template-columns: 1fr;
+  }
+
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
@@ -205,5 +209,18 @@
     width: 100% !important;
     max-width: 400px;
     margin-top: 1rem !important;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 1rem;
   }
 }

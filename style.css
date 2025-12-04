@@ -420,6 +420,8 @@ section {
 }
 
 .about-containers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -429,10 +431,6 @@ section {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-.about-containers,
-.about-details-container {
   display: flex;
 }
 
@@ -562,6 +560,57 @@ article .icon {
 article:hover .icon {
   transform: scale(1.1) rotate(5deg);
 }
+
+/* CATEGORIZED SKILLS SECTION */
+.skills-categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--card-shadow);
+  transition: all 0.4s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  letter-spacing: -0.5px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.skills-grid article {
+  width: 100%;
+  max-width: 120px;
+}
+
 
 /* PROJECTS SECTION */
 
