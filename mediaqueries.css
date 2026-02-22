@@ -8,6 +8,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Projects: 2 columns on mid-size screens */
+  #projects .about-containers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   #contact,
   #projects {
     height: fit-content;
@@ -69,9 +74,24 @@
     font-size: 1rem;
   }
 
+  /* Skills grid: 2 columns on tablet */
+  .skills-categories-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .work-header {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  /* Stack work experience cards vertically on tablet */
+  #work-experience .experience-details-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects: 1 column on mobile */
+  #projects .about-containers {
+    grid-template-columns: 1fr;
   }
 
   .project-card {
@@ -121,6 +141,11 @@
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
+  }
+
+  /* Skills grid: 1 column on mobile */
+  .skills-categories-container {
+    grid-template-columns: 1fr;
   }
 
   .experience-sub-title {
