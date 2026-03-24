@@ -25,6 +25,10 @@
   .certifications-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
+
+  .skills-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -74,9 +78,19 @@
     font-size: 1rem;
   }
 
-  /* Skills grid: 2 columns on tablet */
-  .skills-categories-container {
-    grid-template-columns: repeat(2, 1fr);
+  /* Skills section: responsive on tablet */
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .expertise-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
 
   .work-header {
@@ -143,9 +157,33 @@
     font-size: 1rem;
   }
 
-  /* Skills grid: 1 column on mobile */
-  .skills-categories-container {
-    grid-template-columns: 1fr;
+  /* Skills section: responsive on mobile */
+  .expertise-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .skill-tags {
+    gap: 0.5rem;
+  }
+
+  .skill-tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .skill-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .skill-name {
+    font-size: 0.75rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .experience-sub-title {
