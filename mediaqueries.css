@@ -103,6 +103,19 @@
     grid-template-columns: 1fr;
   }
 
+  .journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-grid::before {
+    display: none;
+  }
+
+  .journey-heading,
+  .journey-heading-right {
+    align-self: flex-start;
+  }
+
   /* Projects: 1 column on mobile */
   #projects .about-containers {
     grid-template-columns: 1fr;
