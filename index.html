@@ -5,15 +5,15 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Heni Prajapati | Full Stack Developer Portfolio</title>
+  <title>Heni Prajapati | Software Engineer | Full-Stack Developer</title>
   <meta name="description"
-    content="Full Stack Developer specializing in MERN stack, cloud systems, and machine learning. Master's student in Computer Science at UIC with 1 year experience at FIS Global." />
+    content="Full Stack Developer specializing in MERN stack, backend systems, and machine learning. Master's student in Computer Science at UIC with experience across backend engineering, research data pipelines, and enterprise software development." />
   <meta name="keywords"
     content="Full Stack Developer, MERN Stack, React, Node.js, Python, Java, AWS, Machine Learning, Software Engineer, UIC, Computer Science" />
   <meta name="author" content="Heni Prajapati" />
 
   <!-- Open Graph Meta Tags for Social Sharing -->
-  <meta property="og:title" content="Heni Prajapati | Full Stack Developer Portfolio" />
+  <meta property="og:title" content="Heni Prajapati | Software Engineer | Full-Stack Developer" />
   <meta property="og:description"
     content="Full Stack Developer specializing in MERN stack, cloud systems, and machine learning." />
   <meta property="og:type" content="website" />
@@ -22,7 +22,7 @@
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Heni Prajapati | Full Stack Developer" />
+  <meta name="twitter:title" content="Heni Prajapati | Software Engineer | Full-Stack Developer" />
   <meta name="twitter:description"
     content="Full Stack Developer specializing in MERN stack, cloud systems, and machine learning." />
   <meta name="twitter:image" content="./assets/profile-pic.png" />
@@ -50,6 +50,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#work-experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#experience">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -67,6 +68,7 @@
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
         <li><a href="#work-experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
         <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -80,10 +82,8 @@
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Heni Prajapati</h1>
-      <p class="section__text__p2">Full Stack Developer</p>
-      <p class="professional-summary">Master's student in Computer Science at UIC with expertise in building scalable
-        full-stack applications. Passionate about creating elegant solutions to complex problems using modern
-        technologies.</p>
+      <p class="section__text__p2">Software Engineer | Full-Stack Developer</p>
+      <p class="professional-summary">Master of Science in Computer Science (UIC, 2024-2026)-GPA: 4.0/4.0. Experienced building scalable backend systems, data pipelines, and full-stack applications using Java, Spring Boot, Python, and modern frontend frameworks.</p>
       <div class="btn-container">
         <button class="btn btn-color-1" onclick="window.open('./assets/Heniben_Prajapati.pdf')">
           Download Resume
@@ -106,33 +106,17 @@
     <div class="about-details-container" style="align-items: center;">
       <div>
         <p style="text-align: justify; max-width:900px; align-content: center; margin-top:10px">
-          Hi, I am a passionate software engineer and current Master's student in Computer Science at the University of
-          Illinois at Chicago. I enjoy designing
-          and building full-stack applications that combine technical strength with great user experience. My background
-          spans front-end and back-end development, cloud systems, databases, and machine learning, and I've delivered
-          projects from concept to launch in both academic and professional settings. I'm driven by curiosity,
-          collaboration, and the challenge of turning real-world problems into elegant, scalable solutions.
+          I am a software engineer and Master's student in Computer Science at the University of Illinois at Chicago,
+          currently working on backend systems for Costco Logistics and previously building enterprise features at FIS
+          and research data pipelines at UIC. My experience spans Java, Spring Boot, REST APIs, SQL Server, Python,
+          Pandas, Angular, and MySQL, with a focus on building reliable systems, improving performance, and turning
+          complex requirements into practical software solutions.
         </p>
         <p style="text-align: justify; max-width:900px; margin-top:15px; color: var(--text-light);">
-          📍 <strong>Location:</strong> Chicago, IL, USA | <strong>Status:</strong> Open to Full-Time Opportunities (May
-          2026)
+          📍 <strong>Location:</strong> Chicago, IL, USA | <strong>Status:</strong> Open to Full-Time Opportunities
         </p>
       </div>
 
-      <div class="about-cards-container">
-        <div class="details-container" style="align-content: center; width: 600px">
-          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-          <h3>Experience</h3>
-          <p>1+ year <br />Software Development</p>
-        </div>
-        <div class="details-container" style="align-content: center; width: 600px">
-          <img src="./assets/education.png" alt="Education icon" class="icon" />
-          <h3>Education</h3>
-          <p>MSCS @ University of Illinois at Chicago (Aug 2024 - May 2026)
-            <br />B.Tech CSE @ IIIT Dharwad (Aug 2019 - May 2023)
-          </p>
-        </div>
-      </div>
 
     </div>
 
@@ -140,75 +124,120 @@
 
   <!-- WORK EXPERIENCE SECTION -->
   <section id="work-experience">
-    <p class="section__text__p1">My Professional Journey</p>
-    <h1 class="title">Experience & Education</h1>
-    <div class="journey-grid">
-      <div class="journey-column">
-        <div class="journey-heading">
-          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-          <span>Experience</span>
+    <h1 class="title">Experience</h1>
+    <div class="experience-cards-grid">
+      <article class="experience-card card-costco">
+        <div class="experience-card__banner">
+          <img src="./assets/costco-banner.png" alt="Costco Wholesale banner" onerror="this.style.display='none'; this.parentElement.classList.add('banner-fallback');" />
         </div>
-
-        <div class="timeline-card details-container">
-          <p class="timeline-date">Jan 2026 - Present</p>
-          <h2 class="experience-sub-title">Research Assistant</h2>
-          <h3 class="timeline-org">University of Illinois at Chicago</h3>
-          <p class="timeline-location">Chicago, USA</p>
-          <ul class="work-responsibilities">
-            <li>Automated research-data cleaning and transformation pipelines, cutting preprocessing from 3 days to under 6 hours.</li>
-            <li>Built validation checks and backend-ready outputs to support public health analytics workflows.</li>
-          </ul>
-          <div class="tech-stack-used">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">Pandas</span>
-            <span class="tech-badge">NumPy</span>
-            <span class="tech-badge">ETL</span>
-          </div>
+        <div class="experience-card__logo">
+          <img src="./assets/costco-logo.png" alt="Costco Wholesale logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <span class="experience-card__logo-fallback">C</span>
         </div>
-
-        <div class="timeline-card details-container">
-          <p class="timeline-date">June 2023 - May 2024</p>
-          <h2 class="experience-sub-title">IT Trainee</h2>
-          <h3 class="timeline-org">FIS Global</h3>
-          <p class="timeline-location">India</p>
-          <ul class="work-responsibilities">
-            <li>Built Spring Boot and Angular applications, improving system performance by 25%.</li>
-            <li>Designed REST APIs, optimized MySQL queries, and improved test coverage with JUnit and Mockito.</li>
-          </ul>
+        <div class="experience-card__body">
+          <p class="timeline-date">July 2026 - Present</p>
+          <h2 class="experience-sub-title">IT Intern (Software Engineer - Backend)</h2>
+          <h3 class="timeline-org">Costco Wholesale</h3>
+          <p class="timeline-location">Chicago, IL</p>
+          <p class="timeline-copy">Developing backend services in Java and Spring Boot for Costco Logistics' HighJump warehouse management platform, building and optimizing REST APIs and SQL Server stored procedures on Azure, and partnering with Business Solutions Analysts to gather requirements and write technical specs for new HighJump/Korber features.</p>
           <div class="tech-stack-used">
             <span class="tech-badge">Java</span>
             <span class="tech-badge">Spring Boot</span>
-            <span class="tech-badge">Angular</span>
-            <span class="tech-badge">MySQL</span>
-            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">REST APIs</span>
+            <span class="tech-badge">T-SQL</span>
+            <span class="tech-badge">Agile</span>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="journey-column">
-        <div class="journey-heading journey-heading-right">
-          <img src="./assets/education.png" alt="Education icon" class="icon" />
-          <span>Education</span>
+      <article class="experience-card card-uic">
+        <div class="experience-card__banner">
+          <img src="./assets/uic-banner.png" alt="University of Illinois at Chicago banner" onerror="this.style.display='none'; this.parentElement.classList.add('banner-fallback');" />
         </div>
+        <div class="experience-card__logo">
+          <img src="./assets/uic-logo.png" alt="University of Illinois at Chicago logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <span class="experience-card__logo-fallback">U</span>
+        </div>
+        <div class="experience-card__body">
+          <p class="timeline-date">Jan 2026 - May 2026</p>
+          <h2 class="experience-sub-title uic-role-title">Research Assistant</h2>
+          <h3 class="timeline-org">University of Illinois at Chicago</h3>
+          <p class="timeline-location">Chicago, IL</p>
+          <p class="timeline-copy">Built Python and Pandas pipelines for public health research datasets end-to-end, automating cleaning, validation, and transformation, adding SQL-backed quality checks that caught 15-20 inconsistencies per dataset, and collaborating with faculty researchers to translate requirements into reliable pipeline components.</p>
+          <div class="tech-stack-used">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Pandas</span>
+            <span class="tech-badge">SQL</span>
+          </div>
+        </div>
+      </article>
 
-        <div class="timeline-card details-container">
+      <article class="experience-card card-fis">
+        <div class="experience-card__banner">
+          <img src="./assets/fis-banner.png" alt="FIS banner" onerror="this.style.display='none'; this.parentElement.classList.add('banner-fallback');" />
+        </div>
+        <div class="experience-card__logo">
+          <img src="./assets/fis-logo.png" alt="FIS logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <span class="experience-card__logo-fallback">F</span>
+        </div>
+        <div class="experience-card__body">
+          <p class="timeline-date">Sept 2023 - Aug 2024</p>
+          <h2 class="experience-sub-title">IT Trainee (Full-Stack Development)</h2>
+          <h3 class="timeline-org">Fidelity National Information Services</h3>
+          <p class="timeline-location">Pune, India</p>
+          <p class="timeline-copy">Built and shipped production features in Spring Boot and AngularJS within an Agile team, resolved 40+ bugs, optimized MySQL-backed REST APIs to improve load times by 30-40%, and designed normalized schemas and stored procedures for batch processing while contributing to code reviews.</p>
+          <div class="tech-stack-used">
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">Spring Boot</span>
+            <span class="tech-badge">REST APIs</span>
+            <span class="tech-badge">MySQL</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <p class="section__text__p1">Academic Background</p>
+    <h1 class="title">Education</h1>
+    <div class="experience-cards-grid education-grid">
+      <article class="experience-card card-uic-edu">
+        <div class="experience-card__banner">
+          <img src="./assets/uic-banner.png" alt="University of Illinois at Chicago banner" onerror="this.style.display='none'; this.parentElement.classList.add('banner-fallback');" />
+        </div>
+        <div class="experience-card__logo">
+          <img src="./assets/uic-logo.png" alt="University of Illinois at Chicago logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <span class="experience-card__logo-fallback">U</span>
+        </div>
+        <div class="experience-card__body">
           <p class="timeline-date">Aug 2024 - May 2026</p>
           <h2 class="experience-sub-title">Master of Science in Computer Science</h2>
           <h3 class="timeline-org">University of Illinois at Chicago</h3>
-          <p class="timeline-location">Chicago, USA</p>
-          <p class="timeline-copy">Advanced coursework focused on software engineering, scalable systems, data-driven
-            development, and machine learning applications.</p>
+          <p class="timeline-location">Chicago, IL</p>
+          <p class="timeline-copy">Advanced coursework focused on software engineering, scalable systems, data-driven development, and machine learning applications.</p>
         </div>
+      </article>
 
-        <div class="timeline-card details-container">
+      <article class="experience-card card-iiit">
+        <div class="experience-card__banner">
+          <img src="./assets/iiit-dharwad-banner.png" alt="IIIT Dharwad banner" onerror="this.style.display='none'; this.parentElement.classList.add('banner-fallback');" />
+        </div>
+        <div class="experience-card__logo">
+          <img src="./assets/iiit-dharwad-logo.png" alt="IIIT Dharwad logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <span class="experience-card__logo-fallback">I</span>
+        </div>
+        <div class="experience-card__body">
           <p class="timeline-date">Aug 2019 - May 2023</p>
           <h2 class="experience-sub-title">Bachelor of Technology in Computer Science</h2>
           <h3 class="timeline-org">IIIT Dharwad</h3>
           <p class="timeline-location">Dharwad, India</p>
-          <p class="timeline-copy">Built a strong foundation in full-stack development, problem solving, software design,
-            and research-led engineering projects.</p>
+          <p class="timeline-copy">Built a strong foundation in full-stack development, problem solving, software design, and research-led engineering projects.</p>
         </div>
-      </div>
+      </article>
     </div>
 
   </section>
@@ -591,7 +620,7 @@
         </div>
         <button type="submit" class="btn btn-color-1 submit-btn">Send Message</button>
       </form>
-      <p class="email-text">Or email me directly at: <a href="mailto:heni290102@gmail.com">heni290102@gmail.com</a></p>
+      <p class="email-text">Or email me directly at: <a href="mailto:heni290102@gmail.com">heni290102@gmail.com</a> • Phone: <a href="tel:+18728990974">+1 (872) 899-0974</a></p>
     </div>
   </section>
   <footer>
@@ -600,6 +629,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#work-experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>

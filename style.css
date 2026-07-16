@@ -695,6 +695,14 @@ footer::before {
   gap: 1rem;
 }
 
+.stacked-timeline {
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .journey-heading {
   display: flex;
   align-items: center;
@@ -751,6 +759,203 @@ footer::before {
 .timeline-card {
   text-align: left;
   padding: 1.4rem 1.45rem;
+}
+
+.experience-cards-grid {
+  max-width: 1300px;
+  margin: 1.75rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.education-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 980px;
+}
+
+.experience-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 530px;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(12, 16, 28, 0.92);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  text-align: center;
+  width: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.34);
+  background: rgba(14, 18, 32, 0.95);
+}
+
+.experience-card__banner {
+  position: relative;
+  height: 130px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.experience-card__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.experience-card__banner.banner-fallback {
+  background: linear-gradient(180deg, rgba(32, 39, 59, 0.95) 0%, rgba(12, 16, 28, 0.95) 100%);
+}
+
+.experience-card__logo {
+  position: absolute;
+  top: 92px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  border: 8px solid rgba(12, 16, 28, 0.92);
+  overflow: hidden;
+}
+
+.experience-card__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-card__logo-fallback {
+  position: absolute;
+  inset: 0;
+  display: none;
+  place-items: center;
+  background: inherit;
+}
+
+.experience-card__body {
+  padding: 3.6rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+  align-items: center;
+}
+
+.experience-card .timeline-date {
+  margin-bottom: 0;
+}
+
+.experience-card .timeline-org {
+  margin-top: -0.15rem;
+  font-size: 1.08rem;
+}
+
+.experience-card .experience-sub-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.experience-card .uic-role-title {
+  margin-bottom: 2rem;
+}
+
+.experience-card .timeline-location {
+  margin-bottom: 0;
+}
+
+.experience-card .timeline-copy {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin-top: 0.2rem;
+  max-width: 34ch;
+}
+
+.experience-card .work-responsibilities {
+  text-align: left;
+  width: 100%;
+  padding-left: 1.1rem;
+  margin: 0.05rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience-card .work-responsibilities li {
+  color: var(--text-secondary);
+  line-height: 1.45;
+  font-size: 0.9rem;
+}
+
+.experience-card .tech-stack-used {
+  margin-top: 0.2rem;
+  justify-content: center;
+}
+
+.card-costco .experience-card__banner {
+  background: linear-gradient(180deg, #1e60c9 0%, #1860c1 100%);
+}
+
+.card-costco .experience-card__banner.banner-fallback {
+  background: linear-gradient(180deg, #1e60c9 0%, #1860c1 100%);
+}
+
+.card-costco .experience-card__logo {
+  background: #1d7cf2;
+}
+
+.card-uic .experience-card__banner,
+.card-uic-edu .experience-card__banner {
+  background: linear-gradient(180deg, #8f240f 0%, #7c1c09 100%);
+}
+
+.card-uic .experience-card__banner.banner-fallback,
+.card-uic-edu .experience-card__banner.banner-fallback {
+  background: linear-gradient(180deg, #8f240f 0%, #7c1c09 100%);
+}
+
+.card-uic .experience-card__logo,
+.card-uic-edu .experience-card__logo {
+  background: #c93818;
+}
+
+.card-fis .experience-card__banner {
+  background: linear-gradient(180deg, #d05158 0%, #c2434d 100%);
+}
+
+.card-fis .experience-card__banner.banner-fallback {
+  background: linear-gradient(180deg, #d05158 0%, #c2434d 100%);
+}
+
+.card-fis .experience-card__logo {
+  background: #ff5b66;
+}
+
+.card-iiit .experience-card__banner {
+  background: linear-gradient(180deg, #0e6f61 0%, #0b5f53 100%);
+}
+
+.card-iiit .experience-card__banner.banner-fallback {
+  background: linear-gradient(180deg, #0e6f61 0%, #0b5f53 100%);
+}
+
+.card-iiit .experience-card__logo {
+  background: #0e8a7a;
 }
 
 .experience-details-container {

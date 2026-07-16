@@ -29,6 +29,15 @@
   .skills-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .experience-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -103,17 +112,14 @@
     grid-template-columns: 1fr;
   }
 
-  .journey-grid {
+  .experience-cards-grid,
+  .education-grid {
     grid-template-columns: 1fr;
+    max-width: 560px;
   }
 
-  .journey-grid::before {
-    display: none;
-  }
-
-  .journey-heading,
-  .journey-heading-right {
-    align-self: flex-start;
+  .experience-card {
+    min-height: auto;
   }
 
   /* Projects: 1 column on mobile */
